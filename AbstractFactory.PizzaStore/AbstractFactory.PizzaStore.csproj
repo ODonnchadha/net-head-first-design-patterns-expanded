@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDB21823-980A-401A-8E83-8DBF879FC246}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>HeadFirstDesignPatterns.AbstractFactory.PizzaStore</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HeadFirstDesignPatterns.AbstractFactory.PizzaStore</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlackOlives.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheesePizza.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChicagoPizzaIngredientFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChicagoPizzaStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClamPizza.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EggPlant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FreshClams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FrozenClams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Garlic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICheese.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IClam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDough.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPepperoni.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPizzaIngredientFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISauce.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVeggies.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MarinaraSauce.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mozzerella.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mushroom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NYPizzaIngredientFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NYPizzaStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Onion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PepperoniPizza.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pizza.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PizzaStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlumTomatoSauce.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RedPepper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReggianoCheese.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SlicedPepperoni.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spinach.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThickCrustDough.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThinCrustDough.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
